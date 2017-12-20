@@ -10,7 +10,13 @@ class AllDoves extends React.Component {
         return (
             <div>
                 
-                    <h1>this.props.doves</h1>
+                <ul>
+                    {
+                        this.props.doves.map(dove => (
+                            <li>{dove.id}</li>
+                        ))
+                    }
+                </ul>
                 
             </div>
         );

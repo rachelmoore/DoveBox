@@ -3,7 +3,7 @@ import AllDoves from './all_doves';
 import { fetchDoves, fetchDove, deleteDove } from '../actions/dove_actions';
 
 const mapStateToProps = state => ({
-    doves: state.doves
+    doves: Object.values(state.doves)
 });
 
 const mapDispatchToProps = dispatch => ({
