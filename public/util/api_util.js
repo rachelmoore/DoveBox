@@ -1,7 +1,7 @@
 export const fetchAllDoves = () => (
     $.ajax({
         method: 'GET', 
-        url: `doves`
+        url: 'http://localhost:3000/doves'
     })
 );
 
