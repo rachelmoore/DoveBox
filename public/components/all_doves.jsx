@@ -9,7 +9,6 @@ class AllDoves extends React.Component {
     render() {
         return (
             <div>
-                
                 <table>
                     <tr>
                         <th>ID</th>
@@ -17,15 +16,17 @@ class AllDoves extends React.Component {
                         <th>Color</th>
                         <th>Images Collected</th>
                         <th>Last Command</th>
+                        <th>Deorbit Date</th>
                     </tr>
                     {
                         this.props.doves.map(dove => (
                             <tr>
                                 <td>{dove.id}</td>
-                                <td>{dove.active}</td>
+                                <td>{ String(dove.active) }</td>
                                 <td>{dove.color}</td>
                                 <td>{dove.images_collected}</td>
                                 <td>{dove.last_command}</td>
+                                <td>{dove.deorbit_dt}</td>
                             </tr>
                         ))
                     }
