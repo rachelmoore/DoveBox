@@ -1,0 +1,14 @@
+{
+  "name": "dove-api",
+  "version": "0.0.1",
+  "description": "A RESTful app for Doves",
+  "main": "./lib/server/index.js",
+  "bin": "./bin/index.js",
+  "dependencies": {
+    "json-server": "^0.9.4",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "json-server --port 3000 --watch db.json"
+  }
+}
