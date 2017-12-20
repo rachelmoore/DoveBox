@@ -7,10 +7,10 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    fetchDoves: () => dispatch(fetchDoves())
+    createDove: () => dispatch(createDove())
 });
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(AllDoves);
+)(Header);

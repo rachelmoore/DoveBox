@@ -8,13 +8,21 @@ export const fetchAllDoves = () => (
 export const fetchSingleDove = (id) => (
     $.ajax({
         method: 'GET', 
-        url: `doves/${id}`
+        url: `http://localhost:3000/doves/${id}`
+    })
+);
+
+export const createDove = (dove) => (
+    $.ajax({
+        method: 'POST',
+        url: `http://localhost:3000/doves`,
+        data: dove
     })
 );
 
 export const deleteDove = (id) => (
     $.ajax({
         method: 'DELETE', 
-        url: `doves/${id}`
+        url: `http://localhost:3000/doves/${id}`
     })
 );
