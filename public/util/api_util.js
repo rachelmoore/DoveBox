@@ -16,7 +16,7 @@ export const createDove = (dove) => (
     $.ajax({
         method: 'POST',
         url: `http://localhost:3000/doves`,
-        data: dove
+        data: { dove }
     })
 );
 

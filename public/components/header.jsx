@@ -38,7 +38,11 @@ class Header extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.createDove();
+        const id = this.state.id;
+        const color = this.state.color;
+        const lastCommand = this.state.last_command;
+        const deorbitDt = this.state.deorbit_dt;
+        this.props.createDove({ id, color, lastCommand, deorbitDt} );
     }
 
     // renderErrors() {
@@ -59,8 +63,7 @@ class Header extends React.Component {
                 <div className="nav-container">
 
                     <div className="logo-container">
-                        <h2>DoveBox</h2>
-                        <img src="https://solarsystem.nasa.gov/images/galleries/618486main_earth_320.jpg" height="50px" className="nav-logo-img" />
+                        <h1 className="logo-text">DoveBox</h1>
                     </div>
 
                     <div className="nav-button">

@@ -1,18 +1,97 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    color: white;
 }
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Josefin Sans', sans-serif; */
 
-/* SPLASH */
+/* HEADER */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo-container {
+
+}
+
+.logo-text {
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+
+.nav-button {
+
+}
+
+.create-dove-button {
+  min-height: 35px;
+  color: #2e2e2e;
+  background-color: #FFFFFF;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 10px;
+
+}
+
+.create-dove-button:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  background-color: #E4CB72;
+}
+
+/* MODAL */
+
+.modal-form-container {
+
+}
+
+.create-form-box {
+
+}
+
+.modal-logo {
+
+}
+
+.create-form {
+
+}
+
+.modal-label {
+
+}
+
+.modal-input {
+
+}
+
+.modal-button-container {
+
+}
+
+
 
 /* SPLASH */
 
 .splash-container {
     height: 300px;
     width: 100%;
+}
+
+.splash-text {
+    color: white;
+}
+
+.splash-content {
+    z-index: 10;
 }
 
 .stars, .twinkling, .clouds, .splash-content {
@@ -82,3 +161,19 @@ font-family: 'Josefin Sans', sans-serif; */
     from {background-position: 0;}
     to {background-position:10000px 0;}
 } 
+
+
+/* ALL DOVES */
+
+.all-doves-container {
+
+}
+
+.table-container {
+    background-color: 
+}
+
+.all-doves-table {
+    background-color: #2e2e38;
+}
+

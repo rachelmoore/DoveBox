@@ -7,7 +7,9 @@ const DoveReducer = (oldState = {}, action) => {
         case RECEIVE_ALL_DOVES: 
             return merge({}, action.doves);
         case RECEIVE_SINGLE_DOVE:
-            return merge({}, oldState, { [action.dove.id]: action.dove });
+            const addDove = {
+                id: 12, active: true,  color: "aqua", images_collected: 0, last_command: "fly!", deorbitDt: "now" };
+            return merge({}, oldState, addDove);
         case REMOVE_DOVE: 
             let newState = merge({}, oldState);
             delete newState[action.dove.id];
