@@ -6,6 +6,7 @@
   "bin": "./bin/index.js",
   "dependencies": {
     "json-server": "^0.9.4",
+    "react-favicon": "0.0.11",
     "redux-thunk": "^2.2.0"
   },
   "scripts": {

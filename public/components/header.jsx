@@ -60,6 +60,7 @@ class Header extends React.Component {
 
                     <div className="logo-container">
                         <h2>DoveBox</h2>
+                        <img src="https://solarsystem.nasa.gov/images/galleries/618486main_earth_320.jpg" height="50px" className="nav-logo-img" />
                     </div>
 
                     <div className="nav-button">

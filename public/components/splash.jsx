@@ -13,9 +13,8 @@ class Splash extends React.Component {
                 <div className="twinkling"></div>
                 <div className="clouds"></div>
                 <div className="splash-content">
-                     <h1>SPLASH</h1>
+                     <h1 className="splash-text">SPLASH</h1>
                 </div>
-                <div>fucking hello></div>
             </div>
         );
     }
