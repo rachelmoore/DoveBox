@@ -148,7 +148,7 @@ class Header extends React.Component {
 
                                     <div className="modal-button-container">
                                         <button className="modal-button" onClick={this.handleSubmit}>
-                                            Launch Dove
+                                            Launch Dove!
                                         </button>
                                     </div>
 
