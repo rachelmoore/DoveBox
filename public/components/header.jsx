@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import Modal from 'react-modal';
 import ModalStyling from './modal_styling';
+import AllDovesContainer from './all_doves_container';
 
 class Header extends React.Component {
 
@@ -13,9 +14,11 @@ class Header extends React.Component {
             active: true,
             color: "",
             last_command: "",
-            deorbit_dt: ""
+            deorbit_dt: "",
+            query: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSearchSubmit = this.handleSearchSubmit.bind(this);
         this.update = this.update.bind(this);
         this.closeModal = this.closeModal.bind(this);
         this.openModal = this.openModal.bind(this);
@@ -61,34 +64,32 @@ class Header extends React.Component {
         });
         this.reload();
     }
+    handleSearchSubmit(e) {
+        e.preventDefault();
+        const q = this.state.query;
+        $.ajax({
+            method: 'GET',
+            contentType: "application/json",
+            url: `http://localhost:3000/doves?q=${q}`
+        });
+        this.reload();
+    }
 
     reload() {
         window.location.reload();
     }
 
-    // renderErrors() {
-    //     return (
-    //         <ul>
-    //             {this.props.errors.map((error, i) => (
-    //                 <li key={`error-${i}`}>
-    //                     {error}
-    //                 </li>
-    //             ))}
-    //         </ul>
-    //     );
-    // }
-
 
     render() {
             return (
                 <div className="nav-container">
-                    <div className="stars"></div>
-                    <div className="twinkling"></div>
-                    <div className="clouds"></div>
+                    <div className="stars1"></div>
+                    <div className="twinkling1"></div>
 
                     <div className="nav-content">
                         <div className="logo-container">
                             <h1 className="logo-text">DoveBox</h1>
+                            <img src="../images/dove_pixel_art.svg" height="50px" className="nav-logo-img" />
                         </div>
 
                         <div className="nav-button">
@@ -106,6 +107,7 @@ class Header extends React.Component {
 
                                 <div className="modal-logo">
                                     <h2 className="modal-logo-text">DoveBox</h2>
+                                    <img src="../images/dove_pixel_art_black.svg" height="60px" className="nav-logo-img" />
                                 </div>
 
                                 <div className="create-form">
@@ -157,6 +159,9 @@ class Header extends React.Component {
                         </div>
 
                     </Modal>
+
+                    
+
                 </div>
             );
         }

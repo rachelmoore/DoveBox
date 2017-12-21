@@ -225,32 +225,18 @@
       "deorbit_dt": "2011-01-20T12:44:03Z"
     },
     {
+      "id": "love_dove",
+      "color": "blue",
+      "last_command": "fly",
+      "deorbit_dt": "never",
+      "active": true,
+      "images_collected": 0
+    },
+    {
       "id": "ruby_dove",
-      "color": "red",
-      "last_command": "fly!",
-      "deorbit_dt": "tomorrow",
-      "active": true,
-      "images_collected": 0
-    },
-    {
-      "id": "BJkrPFKMM"
-    },
-    {
-      "id": "Bk2b_KFzf"
-    },
-    {
-      "id": "dg",
-      "color": "gdg",
-      "last_command": "gd",
-      "deorbit_dt": "gdg",
-      "active": true,
-      "images_collected": 0
-    },
-    {
-      "id": "chicken_dove",
-      "color": "red",
-      "last_command": "ddf",
-      "deorbit_dt": "jkl",
+      "color": "calico",
+      "last_command": "chase!",
+      "deorbit_dt": "never",
       "active": true,
       "images_collected": 0
     }

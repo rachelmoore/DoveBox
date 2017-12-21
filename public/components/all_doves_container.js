@@ -7,7 +7,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    fetchDoves: () => dispatch(fetchDoves())
+    fetchDoves: () => dispatch(fetchDoves()),
+    deleteDove: (id) => dispatch(deleteDove(id))
 });
 
 export default connect(

@@ -5,7 +5,7 @@ const ModalStyling = {
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: 'rgba(255, 255, 255, 0.75)',
+        backgroundColor: 'rgba(000, 000, 000, 0.75)',
         zIndex: 10
     },
     content: {
@@ -18,7 +18,7 @@ const ModalStyling = {
         border: '2px solid #2e2e2e',
         padding: '20px',
         zIndex: 11,
-        backgroundColor: '#d3d3d3'
+        backgroundColor: '#e5e5e5'
     }
 };
 
