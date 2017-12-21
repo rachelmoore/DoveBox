@@ -19,6 +19,7 @@ class Header extends React.Component {
         this.update = this.update.bind(this);
         this.closeModal = this.closeModal.bind(this);
         this.openModal = this.openModal.bind(this);
+        this.reload = this.reload.bind(this);
     }
 
     closeModal() {
@@ -42,7 +43,27 @@ class Header extends React.Component {
         const color = this.state.color;
         const lastCommand = this.state.last_command;
         const deorbitDt = this.state.deorbit_dt;
-        this.props.createDove({ id, color, lastCommand, deorbitDt} );
+        const thisDove = { id: id, color: color, last_command: lastCommand, deorbit_dt: deorbitDt, active: true, images_collected: 0 };
+        const stringifiedDove = JSON.stringify(thisDove);
+        console.log("THIS IS NORMAL DOVE OBJECT");
+        console.log(thisDove);
+
+        console.log("THIS IS A STRINGIFY");
+        console.log(JSON.stringify(thisDove));
+
+        // this.props.createDove(thisDove);
+        // this.props.createDove(stringifiedDove);
+        $.ajax({
+            method: 'POST',
+            contentType: "application/json",
+            url: `http://localhost:3000/doves`,
+            data: JSON.stringify(thisDove)
+        });
+        this.reload();
+    }
+
+    reload() {
+        window.location.reload();
     }
 
     // renderErrors() {
@@ -61,13 +82,18 @@ class Header extends React.Component {
     render() {
             return (
                 <div className="nav-container">
+                    <div className="stars"></div>
+                    <div className="twinkling"></div>
+                    <div className="clouds"></div>
 
-                    <div className="logo-container">
-                        <h1 className="logo-text">DoveBox</h1>
-                    </div>
+                    <div className="nav-content">
+                        <div className="logo-container">
+                            <h1 className="logo-text">DoveBox</h1>
+                        </div>
 
-                    <div className="nav-button">
-                        <button className="create-dove-button" onClick={this.openModal}>Create Dove</button>
+                        <div className="nav-button">
+                            <button className="create-dove-button" onClick={this.openModal}>Create Dove</button>
+                        </div>
                     </div>
 
                     <Modal

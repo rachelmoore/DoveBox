@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import AllDoves from './all_doves';
-import { fetchDoves, fetchDove, deleteDove } from '../actions/dove_actions';
+import { fetchDoves, fetchDove, deleteDove, createDove } from '../actions/dove_actions';
 
 const mapStateToProps = state => ({
     doves: Object.values(state.doves)

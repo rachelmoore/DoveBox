@@ -10,9 +10,9 @@ const receiveAllDoves = (doves) => ({
     doves
 });
 
-const receiveSingleDove = (dove) => ({
+const receiveSingleDove = (theeDove) => ({
     type: RECEIVE_SINGLE_DOVE,
-    dove
+    theeDove
 });
 
 const removeDove = (dove) => ({
@@ -29,7 +29,7 @@ export const fetchDove = (id) => dispatch => (
 );
 
 export const createDove = (dove) => dispatch => (
-    APIUtil.createDove(dove).then(thisDove => dispatch(receiveSingleDove(thisDove)))
+    APIUtil.createDove(dove)
 );
 
 

@@ -12,13 +12,15 @@ export const fetchSingleDove = (id) => (
     })
 );
 
-export const createDove = (dove) => (
+export const createDove = (dove) => {
+    console.log(dove);
     $.ajax({
         method: 'POST',
+        contentType: "application/json",
         url: `http://localhost:3000/doves`,
-        data: { dove }
-    })
-);
+        data: dove
+    });
+};
 
 export const deleteDove = (id) => (
     $.ajax({

@@ -225,22 +225,34 @@
       "deorbit_dt": "2011-01-20T12:44:03Z"
     },
     {
-      "id": "rJA6uyYMf"
-    },
-    {
-      "id": "B1pHcJYfM"
-    },
-    {
-      "{\n    \"id\": \"RM\",\n    \"active\": false,\n    \"color\": \"#00FF55\",\n    \"images_collected\": 9001,\n    \"last_command\": \"fly!\",\n    \"deorbit_dt\": \"2016-01-04T12:44:03Z\"\n  }": "",
-      "id": "ryOa5JKff"
-    },
-    {
-      "id": "RM",
-      "active": false,
-      "color": "#00FF55",
-      "images_collected": 9001,
+      "id": "ruby_dove",
+      "color": "red",
       "last_command": "fly!",
-      "deorbit_dt": "2016-01-04T12:44:03Z"
+      "deorbit_dt": "tomorrow",
+      "active": true,
+      "images_collected": 0
+    },
+    {
+      "id": "BJkrPFKMM"
+    },
+    {
+      "id": "Bk2b_KFzf"
+    },
+    {
+      "id": "dg",
+      "color": "gdg",
+      "last_command": "gd",
+      "deorbit_dt": "gdg",
+      "active": true,
+      "images_collected": 0
+    },
+    {
+      "id": "chicken_dove",
+      "color": "red",
+      "last_command": "ddf",
+      "deorbit_dt": "jkl",
+      "active": true,
+      "images_collected": 0
     }
   ]
 }

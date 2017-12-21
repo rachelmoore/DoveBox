@@ -9,12 +9,7 @@ class Splash extends React.Component {
     render() {
         return (
             <div className="splash-container">
-                <div className="stars"></div>
-                <div className="twinkling"></div>
-                <div className="clouds"></div>
-                <div className="splash-content">
-                     <h1 className="splash-text">SPLASH</h1>
-                </div>
+                
             </div>
         );
     }
