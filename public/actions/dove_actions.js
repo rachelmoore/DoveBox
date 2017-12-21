@@ -28,6 +28,11 @@ export const fetchDove = (id) => dispatch => (
     APIUtil.fetchSingleDove(id).then(dove => dispatch(receiveSingleDove(dove)))
 );
 
+export const createDove = (dove) => dispatch => (
+    APIUtil.createDove(dove).then(thisDove => dispatch(receiveSingleDove(thisDove)))
+);
+
+
 export const deleteDove = (id) => dispatch => (
     APIUtil.deleteDove(id).then(dove => dispatch(removeDove(dove)))
 );
